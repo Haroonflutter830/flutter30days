@@ -1,17 +1,22 @@
 import 'package:flutter/material.dart';
+import 'package:haroon/page/Home_page.dart';
+import 'package:haroon/page/day3.dart';
+import 'package:haroon/page/login_page.dart';
 
 
 
 
 void main(){
-  runApp(MaterialApp(
-    debugShowCheckedModeBanner: false,
-    title: "the nation",
-    home: Scaffold(
-      appBar: AppBar(
-        title: Text('day1'),
-      ),
-      body: Center(child:  Text('college terbala')),
-    ),
-  ));
+  runApp(MyApp());
+}
+class MyApp extends StatelessWidget{
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: "the nation",
+      home:LoginPage(),
+    );
+  }
+
 }
