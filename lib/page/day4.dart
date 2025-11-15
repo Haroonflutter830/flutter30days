@@ -35,7 +35,7 @@ Widget build(BuildContext context){
             SizedBox(height: 20,),
             ElevatedButton(onPressed:  (){
               setState(() {
-                value-=1;
+
               });
 
             }, child:Icon(Icons.remove)),
