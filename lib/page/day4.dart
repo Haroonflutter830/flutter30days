@@ -17,7 +17,6 @@ Widget build(BuildContext context){
     return Scaffold(
     appBar: AppBar(
       title: Text('day4'),
-      backgroundColor: Colors.red,
 
     ),
       body:Center(
@@ -35,7 +34,7 @@ Widget build(BuildContext context){
             SizedBox(height: 20,),
             ElevatedButton(onPressed:  (){
               setState(() {
-
+              value-=1;
               });
 
             }, child:Icon(Icons.remove)),
